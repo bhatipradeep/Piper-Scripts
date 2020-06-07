@@ -45,7 +45,7 @@ exports.handler = async (event) => {
             Item: {
               'COLUMN_1' : {S: jsonElement["data-1"]},
               'COLUMN_2' : {S: jsonElement["data-2"]},
-              'COLUMN_3' : {N: jsonElement["data-3"]},
+              'COLUMN_3' : {N: jsonElement["data-3"]}
             }
         };
         
@@ -57,12 +57,7 @@ exports.handler = async (event) => {
             console.log("Success", data);
             }
         });
-
-    }
-    
-    
-      
-      
+    }    
 };
 //comment below line if code runs in aws lambda
 exports.handler();
