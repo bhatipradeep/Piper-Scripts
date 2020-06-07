@@ -8,7 +8,7 @@ const csv = require('csvtojson');
 //Note: For local machine you can refer below for setting credentials:
 //https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html 
 
-aws.config.update({region: 'YOUR_REGION'});
+aws.config.update({region: 'REGION'});
 const S3 = new aws.S3();
 const ddb = new aws.DynamoDB({
     apiVersion: '2012-08-10',
